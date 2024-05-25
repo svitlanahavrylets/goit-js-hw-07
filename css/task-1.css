@@ -1,0 +1,13 @@
+#categories {
+  display: flex;
+  display: block;
+  
+    
+  }
+  .item {
+    background-color: #f6f6fe;
+    border-radius: 8px;
+padding: 16px;
+width: 392px;
+height: 100%;
+  }
