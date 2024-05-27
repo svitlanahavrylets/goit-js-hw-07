@@ -6,11 +6,28 @@ function getRandomHexColor() {
 const divElement = document.querySelector("#controls");
 const inputElement = document.querySelector('input[type="number"]');
 const btnCreateElement = document.querySelector("button[data-create]");
-const btnDestrouElement = document.querySelector("button[data-destroy]");
-const messagesValue = inputElement.value.trim();
+const btnDestroyElement = document.querySelector("button[data-destroy]");
 const divBoxesElement = document.querySelector("#boxes");
 
-btnCreateElement.addEventListener("click", handleBtnElementClick) 
-function handleBtnElementClick(event) {
-  
+btnCreateElement.addEventListener("click", () => {
+  const amount = inputElement.value;
+  if (amount < 0 || amount > 100) {
+    return;
+  }
+  let size = 30;
+  const markup = [];
+  for (let index = 0; index < amount; index++) {
+    markup.push(
+      `<div style =
+      "background-color:${getRandomHexColor()}; width = ${size}px; height = ${size}px"></div>`
+    );
+    size += 10;
+  }
+  divBoxesElement.innerHTML = markup.join("");
+});
+
+btnDestroyElement.addEventListener("click", destroyBoxes);
+
+function destroyBoxes() {
+  divBoxesElement.innerHTML = "";
 }
