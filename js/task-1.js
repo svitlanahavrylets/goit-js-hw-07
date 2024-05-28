@@ -8,6 +8,10 @@ items.forEach((item) => {
   const ulElLen = ulEl.children.length;
   const textH = h.textContent;
 
+  const ul = item.children[1];
+  console.log(ul);
+  ul.className = "inner--ul";
+
   console.log(`Category: ${textH}`);
   console.log(`Elements: ${ulElLen}`);
 });

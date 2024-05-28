@@ -1,5 +1,9 @@
 const formElement = document.querySelector(".login-form");
-const userEmailElement = document.querySelector("email");
+const labels = document.querySelectorAll(".login-form label");
+
+labels.forEach((label) => {
+  label.className = "label--style";
+});
 
 formElement.addEventListener("submit", (event) => {
   event.preventDefault();
