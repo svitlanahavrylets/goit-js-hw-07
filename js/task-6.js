@@ -21,7 +21,7 @@ btnCreateElement.addEventListener("click", () => {
     for (let index = 0; index < amount; index++) {
       markup.push(
         `<div style =
-      "background-color:${getRandomHexColor()}; width = ${size}px; height = ${size}px"></div>`
+      "background-color:${getRandomHexColor()}; width: ${size}px; height: ${size}px"></div>`
       );
       size += 10;
     }
