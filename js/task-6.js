@@ -35,3 +35,11 @@ btnDestroyElement.addEventListener("click", destroyBoxes);
 function destroyBoxes() {
   divBoxesElement.innerHTML = "";
 }
+
+const btnElement = document.querySelectorAll("#controls button");
+const firstBtnElement = btnElement[0];
+const secondBtnElement = btnElement[1];
+
+firstBtnElement.className = "js-first-btn";
+secondBtnElement.className = "js-second-btn";
+inputElement.className = "js-input";

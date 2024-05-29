@@ -14,13 +14,13 @@
   border-radius: 8px;
 }
 
-.label--style {
+.label-style {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.label--style input {
+.label-style input {
   border: 1px solid #808080;
   border-radius: 4px;
   padding: 5px;

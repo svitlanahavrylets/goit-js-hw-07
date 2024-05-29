@@ -2,7 +2,7 @@ const formElement = document.querySelector(".login-form");
 const labels = document.querySelectorAll(".login-form label");
 
 labels.forEach((label) => {
-  label.className = "label--style";
+  label.className = "label-style";
 });
 
 formElement.addEventListener("submit", (event) => {

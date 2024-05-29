@@ -8,7 +8,6 @@ const BtnElement = document.querySelector(".change-color");
 const colorElement = document.querySelector(".color");
 
 const bodyElement = document.querySelector("body");
-console.log(bodyElement);
 
 BtnElement.addEventListener("click", handleBtnElementClick);
 function handleBtnElementClick() {
@@ -23,4 +22,3 @@ pElement.style.fontWeight = "400";
 pElement.style.fontFamily = "Montserrat, sans-serif";
 pElement.style.lineHeight = "1.3";
 pElement.style.letterSpacing = "0.04em";
-

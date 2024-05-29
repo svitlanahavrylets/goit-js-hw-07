@@ -9,8 +9,7 @@ items.forEach((item) => {
   const textH = h.textContent;
 
   const ul = item.children[1];
-  console.log(ul);
-  ul.className = "inner--ul";
+  ul.className = "inner-ul";
 
   console.log(`Category: ${textH}`);
   console.log(`Elements: ${ulElLen}`);
