@@ -20,6 +20,6 @@ formElement.addEventListener("submit", (event) => {
     email: formData.get("email"),
     password: formData.get("password"),
   };
-  formElement.reset();
   console.log(data);
+  formElement.reset();
 });
